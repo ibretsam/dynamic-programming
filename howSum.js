@@ -31,4 +31,4 @@ console.log(howSum(300, [7, 14]));
 
 // Memoized:
 // time: O(n * m ^ 2)
-// space: O(m)
+// space: O(m^2)
