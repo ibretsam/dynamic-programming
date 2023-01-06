@@ -19,3 +19,12 @@ console.log(
 console.log(
   canConstruct("enterapotentpot", ["a", "p", "ent", "enter", "ot", "o", "t"])
 );
+console.log(
+  canConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", [
+    "e",
+    "ee",
+    "eee",
+    "eeee",
+    "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  ])
+);
