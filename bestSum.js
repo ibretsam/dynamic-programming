@@ -22,6 +22,17 @@ const bestSum = (target, numbers, memo = {}) => {
   return bestCombination;
 };
 
+// m = target
+// n = numbers.length
+
+// Brute force:
+// Time: O(n^m * m)
+// Space: O(m^2)
+
+// Memoized:
+// Time: O(n * m^2)
+// Space: O(m^2)
+
 console.log(bestSum(7, [5, 3, 4, 7]));
 console.log(bestSum(8, [2, 3, 5]));
 console.log(bestSum(8, [1, 4, 5]));
