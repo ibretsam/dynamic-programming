@@ -16,6 +16,17 @@ const canConstruct = (target, wordbank, memo = {}) => {
   return false;
 };
 
+// m = target.length
+// n = wordbank.length
+
+// Brute force:
+// Time: O(n^m * m)
+// Space: O(m^2)
+
+// Memoized:
+// Time: O(n * m^2)
+// Space: O(m^2)
+
 console.log(canConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"]));
 console.log(
   canConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"])
