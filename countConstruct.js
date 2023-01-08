@@ -16,6 +16,17 @@ const countConstruct = (target, wordbank, memo = {}) => {
   return count;
 };
 
+// m = target.length
+// n = wordbank.length
+
+// Brute force:
+// Time: O(n^m * m)
+// Space: O(m^2)
+
+// Memoized:
+// Time: O(n * m^2)
+// Space: O(m^2)
+
 console.log(countConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"]));
 console.log(
   countConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"])
