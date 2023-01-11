@@ -5,7 +5,7 @@ const canConstruct = (target, wordbank) => {
   for (let i = 0; i < target.length; i++) {
     if (table[i] === true) {
       for (let word of wordbank) {
-        if (target.replace(word, "").indexOf(word) === 0) {
+        if (target.slice(i).indexOf(word) === 0) {
           table[i + word.length] = true;
         }
       }
